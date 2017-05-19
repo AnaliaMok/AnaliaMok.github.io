@@ -1,4 +1,4 @@
-/* 
+/*
     File Name: main_style.css
     Description: Main stylesheet used by index.html
     @author: Analia Mok
@@ -46,6 +46,7 @@ div#content, div#temp_footer{
     position: relative;
     top: 9%;
     width: 65%;
+    margin: auto;
 }
 
 /* Name and Major Styling */
@@ -59,8 +60,12 @@ span#logo, h2#title{
     opacity: 1;
 }
 
+/* Name and Major Logo */
 span#logo{
-    margin-top: 5%;
+    display: inline-block;
+    margin: 5% auto 0 auto;
+    padding: 0.5em 0;
+    width: 65%;
 }
 
 h2#title{
@@ -71,12 +76,25 @@ h2#title{
     margin-bottom: 0;
 }
 
-div#content p{
+div#content{
+    /* Positioning in the middle of the screen */
+    /*position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;*/
+}
+
+div#content p, div#content ul{
     display: inline-block;
     color: #FFFFFF;
-    text-align: left;
+    text-align: justify;
     font-family: "Open Sans", sans-serif;
     margin: 10% 0;
+}
+
+div#content ul{
+    margin: 0;
+    padding: 0;
 }
 
 /* Line Division to separate sections */
@@ -138,35 +156,45 @@ p#attribution a{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        position: relative;
     }
-    
+
     main div#content, div#temp_footer{
         display: block;
         width: 37%;
         margin: auto;
         vertical-align: middle;
-        top: 15%;
+    }
+
+    main div#content{
+        /* Placing content block in middle of screen */
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        right: 25%;
     }
 
     div#temp_footer{
         width: 100%;
     }
-    
+
     /* Position logo to upper left */
     main span#logo{
         margin: 0;
-        display: block;
+        display: inline-block;
+        width: auto;
+        padding: 1em 2em;
         position: absolute;
         top: 2%;
         left: 2%;
     }
-    
+
     h2#title{
         margin-top: 0;
     }
-    
+
     div#content p{
         margin: 5% 0;
     }
-    
+
 }
