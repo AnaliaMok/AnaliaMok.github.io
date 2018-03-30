@@ -1,407 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Analia Mok</title>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans%7CRaleway" rel="stylesheet">
-    <!-- Icon Stylesheet-->
-    <link rel="stylesheet" href="assets/css/ionicons.css">
-    <!-- Own Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <!-- Main JavaScript -->
-    <script src="assets/js/main_script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analia Mok | GitHub Repositories</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato%7CRaleway:400,500,900" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div id="logo" onclick="return scrollToElement('call-to-action', 0);">
-                ANALIA MOK
-            </div>
 
-            <ul>
-                <li><a href="#" id="active" onclick="return scrollToElement('call-to-action', 0);">ABOUT ME</a></li>
-                <li><a href="#" onclick="return scrollToElement('resume', 1);">RESUME</a></li>
-                <li><a href="#" onclick="return scrollToElement('projects', 2);">PROJECTS</a></li>
-                <li><a href="#" onclick="return scrollToElement('contact-page', 3);">CONTACT</a></li>
-            </ul>
-
-            <div id="menu-icon">
-                <div id="one"></div>
-                <div id="two"></div>
-                <div id="three"></div>
-            </div>
-
+  <main class="wrapper">
+    <div id="image">
+      <img src="social-github.png" alt="github logo">
+    </div>
+    <div id="content">
+      <h1>Analia Mok | GitHub Respositories</h1>
+      <div id="filter-bar">
+        <div id="custom-select">
+          <select id="language-select">
+            <option value="All">All</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+          </select>
         </div>
-    </nav>
-
-    <main>
-        <div id="call-to-action" class="content-block">
-            <h2>Hi, I'm Analia Mok</h2>
-            <p>
-                A Computer Science student with a passion for
-                <span>Web Development</span> and <span>Computer Graphics</span>
-            </p>
-        </div><!-- End of call-to-action -->
-
-        <div id="about-me" class="content-block">
-            <div id="profile-pic"></div>
-            <div id="content">
-                <h2>ABOUT ME</h2>
-                <p>
-                    I am a third year Computer Science student at Rochester Institute of
-                    Technology. I am currently pursuing my undergrad in CS as well as
-                    completing a minor in Mobile Development. Why these two studies?
-                    Well, because I have a split creativity: one side is more analytical
-                    and academic, and the other is more artistic. CS allows me to
-                    continue to use my analytical mind as I dive deeper into the world
-                    of computers and programming. Meanwhile, mobile - and technically
-                    web - dev brings out my artisitic creativity while still combining
-                    with my love for programming. It's hard to choose between CS and
-                    Mobile Dev, so why not both? Currently, I expect to graduate in May
-                    2020 as I am in a 5-year co-op program. However, I am planning to
-                    extend my graduation date to May 2021 to pursue an Accelerated
-                    Masters with an emphasis on Computer Graphics.
-                </p>
-                <p>I am currently unavailable for hire until Spring 2019.</p>
-            </div>
-        </div><!-- End of about-me -->
-
-        <div class="content-block" id="resume">
-            <div class="blue-button" id="pdf-btn"><a href="assets/AnaliaMok_Resume.pdf" target="_blank">DOWNLOAD AS PDF</a></div>
-            <div class="left-side">
-                <h2>EDUCATION</h2>
-                <p><strong>Rochester Institute of Technology</strong>, Rochester, NY</p>
-                <p>BS in Computer Science &amp; Minor in Mobile Development, expected May 2020</p>
-                <span><strong>GPA:</strong> 3.90</span>
-                <span><strong>Dean's List:</strong> Fall 2015, Fall &amp; Spring 2016, Spring 2017</span>
-
-                <h3>Courses:</h3>
-                <ul>
-                    <li>
-                        Computer Science I &amp; II, Mechanics of Programming,
-                        CS Theory, Concepts of Computer Systems, Analysis of Algorithms,
-                        Intro to Software Engineering
-                    </li>
-                    <li>
-                        Discrete Math, Linear Algebra, Probability and Statistics
-                    </li>
-                </ul>
-
-                <h2>EXPERIENCE</h2>
-                <p><strong>Department of Computer Science</strong>, Grader, RIT</p>
-                <p class="time-span">August 2016 - Present</p>
-                <p>
-                    Responsible for grading Python programs for a Computer Science I
-                    section and Java projects for Computer Science II. Job required no
-                    supervision, but included constant teacher-student communication.
-                </p>
-
-                <p><strong>Global Village Cantina &amp; Grille</strong>, RIT</p>
-                <p class="time-span">August 2016 - Present</p>
-                <p>
-                    Serving customers in an “assembly” line fashion and closed the
-                    restaurant at night. Job requires minimal supervision.
-                </p>
-
-            </div>
-            <div class="right-side">
-                <h2>SKILLSET</h2>
-
-                <h3>LANGUAGES</h3>
-                <ul>
-                    <li>HTML 5 / CSS 3</li>
-                    <li>JavaScript</li>
-                    <li>Python 3</li>
-                    <li>Java 8</li>
-                    <li>C</li>
-                    <li>PHP (Learning)</li>
-                </ul>
-
-                <h3>SOFTWARE</h3>
-                <ul>
-                    <li>Atom &amp; Brackets</li>
-                    <li>Vim</li>
-                    <li>Pycharm IDE &amp; IntelliJ IDEA</li>
-                    <li>xampp</li>
-                    <li>cmder</li>
-                </ul>
-
-                <h3>TECHNOLOGIES</h3>
-                <ul>
-                    <li>Git / GitHub</li>
-                    <li>SVN &amp; Tortoise SVN</li>
-                    <li>Django 1.9.1</li>
-                    <li>CodeIgniter 3.1.4 (Learning)</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="projects-container" id="projects">
-            <!-- Left Arrow Button -->
-            <!-- <span class="arrows ion ion-android-arrow-dropleft-circle" id="left_btn"></span> -->
-
-            <div class="projects-container-inner">
-
-                <!-- Grader App -->
-                <div class="project-block">
-
-                    <div class="project-content">
-                        <!-- Project Title -->
-                        <h2>Grader App</h2>
-                        <!-- Project Role -->
-                        <p class="proj-role"><em>(In Progress)</em> Personal Project - Solo</p>
-
-                        <!-- Project Description -->
-                        <p>
-                            Developing a grading web application to assist in the scheduling,
-                            and recording of student grades. This application will also
-                            generate text documents and spreadsheets of student grades.
-                            This application is aimed towards student graders looking
-                            for a more efficient way to grade and to produce documents
-                            for their assigned professor.
-                        </p>
-
-                        <!-- Related Tools -->
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>HTML 5 // CSS 3 // jQuery 3.2.1</li>
-                            <li>PHP 5.6.3 // MySQL</li>
-                            <li>CodeIgniter 3.1.4</li>
-                            <li>Version Control: GitHub</li>
-                        </ul>
-                        <br>
-                        <ul class="proj-links">
-                            <li>
-                                <span class="ion ion-social-github-outline"></span>
-                                <a href="https://github.com/AnaliaMok/GraderApplication">Code Viewable On GitHub</a>
-                            </li>
-                            <!-- Link to ReadMe File found on GitHub -->
-                            <li>
-                                <span class="ion ion-ios-paper-outline"></span>
-                                <a href="https://github.com/AnaliaMok/GraderApplication/blob/master/README.md">View ReadMe File</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div><!-- End of Project Block -->
-
-                <!-- JavaScript Terminal Emulator -->
-                <div class="project-block">
-
-                    <div class="project-content">
-                        <!-- Project Title -->
-                        <h2>JS Terminal Emulator</h2>
-                        <!-- Project Role -->
-                        <p class="proj-role">Solo Developer</p>
-
-                        <!-- Project Description -->
-                        <p>
-                            Developed a pseudo-Unix terminal - using only traditional
-                            front-end technologies. Implements the majority of basic
-                            Unix commands and options with a preset file structure. Meant
-                            to be used in a tutorial setting - not for production.
-                        </p>
-
-                        <!-- Related Tools -->
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>HTML 5 // CSS 3 // JavaScript</li>
-                            <li>Version Control: Git</li>
-                        </ul>
-                        <br>
-                        <ul class="proj-links">
-                            <li>
-                                <span class="ion ion-social-github-outline"></span>
-                                <a href="https://github.com/AnaliaMok/JSTerminalEmulator">Code Viewable On GitHub</a>
-                            </li>
-                            <!-- Link to ReadMe File found on GitHub -->
-                            <li>
-                                <span class="ion ion-ios-paper-outline"></span>
-                                <a href="https://github.com/AnaliaMok/JSTerminalEmulator/blob/master/README.md">View ReadMe File</a>
-                            </li>
-                        </ul>
-                    </div><!-- End of project-content -->
-
-                </div><!-- End of Project Block -->
-
-                <!-- Health Net -->
-                <div class="project-block">
-
-                    <div class="project-content">
-                        <!-- Project Title -->
-                        <h2>Health Net</h2>
-                        <!-- Project Role -->
-                        <p class="proj-role">Development Coordinator</p>
-
-                        <!-- Project Description -->
-                        <p>
-                            Worked in a team of five to design, build, and deploy a health
-                            care web application. Utilized an incremental agile development cycle.
-                        </p>
-
-                        <!-- Related Tools -->
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Python 3</li>
-                            <li>HTML 5 // CSS 3 // JavaScript &amp; jQuery</li>
-                            <li>Django 1.9.1</li>
-                            <li>APIs: FullCalendar &amp; FusionChart</li>
-                            <li>Version Control: SVN / Tortoise SVN</li>
-                        </ul>
-                        <br>
-                        <ul class="proj-links">
-                            <li><span class="ion ion-ios-email-outline"></span>Code Available Upon Request</li>
-                            <!-- TODO: Link to ReadMe File Page -->
-                            <!-- <li><span class="ion ion-ios-paper-outline"></span><a href="#">View ReadMe File</a></li> -->
-                        </ul>
-                    </div>
-
-                </div><!-- End of Project Block -->
-
-                <!-- Huffman Encoding -->
-                <div class="project-block" id="selected">
-
-                    <div class="project-content">
-                        <!-- Project Title -->
-                        <h2>Huffman Encoding</h2>
-                        <!-- Project Role -->
-                        <p class="proj-role">Solo Developer</p>
-
-                        <!-- Project Description -->
-                        <p>
-                            Designed a file compression program utilizing a heap-based Huffman
-                            Encoding implementation. This program either outputs an encoded or
-                            decoded text file – based on the existence of a one byte 'magic'
-                            value in an inputted file.
-                        </p>
-
-                        <!-- Related Tools -->
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>C Language (C-99 Standard)</li>
-                            <li>Valgrind</li>
-                            <li>GDB Debugger</li>
-                            <li>OS: Linux (accessed via puTTy)</li>
-                        </ul>
-                        <br>
-                        <ul class="proj-links">
-                            <li><span class="ion ion-ios-email-outline"></span>Code Available Upon Request</li>
-                            <!-- TODO: Link to ReadMe File Page -->
-                            <!-- <li><span class="ion ion-ios-paper-outline"></span><a href="#">View ReadMe File</a></li> -->
-                        </ul>
-                    </div><!-- End of project-content -->
-
-                </div><!-- End of Project Block -->
-
-                <!-- Escape From Gringotts -->
-                <div class="project-block">
-
-                    <div class="project-content">
-                        <!-- Project Title -->
-                        <h2>Escape From Gringotts</h2>
-                        <!-- Project Role -->
-                        <p class="proj-role">Co-Developer</p>
-
-                        <!-- Project Description -->
-                        <p>
-                            With a partner, developed a tile-based game that implemented
-                            a recursive backtracking algorithm to solve a given game
-                            configuration and to give the player hints.
-                        </p>
-
-                        <!-- Related Tools -->
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Java 8 &amp; JavaFX</li>
-                            <li>IntelliJ IDEA</li>
-                            <li>Version Control: Git</li>
-                        </ul>
-                        <br>
-                        <ul class="proj-links">
-                            <li><span class="ion ion-ios-email-outline"></span>Code Available Upon Request</li>
-                            <!-- TODO: Link to ReadMe File Page -->
-                            <!-- <li><span class="ion ion-ios-paper-outline"></span><a href="#">View ReadMe File</a></li> -->
-                        </ul>
-                    </div>
-
-                </div><!-- End of Project Block -->
-
-            </div><!-- End of projects-container-inner -->
-
-        </div><!-- End of projects-container -->
-
-        <div class="content-block" id="contact-page">
-            <!-- TContact Form -->
-            <div class="left-side">
-                <h2>CONTACT ME</h2>
-                <!-- Email Sent to Main Email -->
-                <form action="https://www.enformed.io/xhp57kb1" method="post">
-                    <div class="form-row">
-                        <label>NAME</label>
-                        <input type="text" name="name" required />
-                    </div>
-
-                    <div class="form-row">
-                        <label>YOUR EMAIL ADDRESS</label>
-                        <input type="email" name="email_address" required />
-                    </div>
-
-                    <div class="form-row">
-                        <label>SUBJECT</label>
-                        <input type="text" name="subject" required />
-                    </div>
-
-                    <div class="form-row">
-                        <label>MESSAGE</label>
-                        <textarea name="message" required></textarea>
-                    </div>
-
-                    <!-- Hidden Security Field -->
-                    <input type="hidden" name="*honeypot" />
-                    <!-- Changed Form Redirection to This Page -->
-                    <input type="hidden" name="*redirect" value="https://analiamok.github.io/" />
-
-                    <!-- Reset and Submit Buttons -->
-                    <div class="form-row">
-                        <input type="text" id="empty-cell">
-                        <div>
-                            <input type="reset" name="reset" value="CLEAR" class="blue-button">
-                            <input type="submit" name="submit" value="SEND" class="blue-button">
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-            <div class="right-side">
-                <h2>OTHER MEDIA</h2>
-                <ul>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/AnaliaMok">linkedin.com/in/AnaliaMok</a></li>
-                    <li>GitHub: <a href="https://github.com/AnaliaMok">github.com/AnaliaMok</a></li>
-                    <li>RIT JobZone: <a href="https://rit-csm.symplicity.com/profiles/analia.mok">rit-csm.symplicity.com/profiles/analia.mok</a></li>
-                </ul>
-                <p style="font-style: italic;">
-                    **Please note that I am unavailable for hire until Spring 2019.
-                    I am already committed for an internship for the Spring and Summer terms
-                    of 2018.
-                </p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <!-- Attributions -->
-        <span>Icons Designed by <a href="https://twitter.com/benjsperry">@benjsperry</a>.
-        Licensed under <a href="http://opensource.org/licenses/MIT">MIT</a>.</span>
-
-        <!-- Copyright -->
-        <span id="copyright">&copy; Analia Mok, 2017</span>
-    </footer>
-
+      </div><!-- #filter-bar -->
+      <div class="grid"></div>
+      <footer>
+        <p>Copyright &copy; 2018 Analia Mok</p>
+      </footer>
+    </div><!-- #content -->
+  </main>
+      
+  <!-- Links Bar -->
+  <div id="social-links">
+    <ul>
+      <li><a href="https://github.com/AnaliaMok">GitHub Profile</a></li>
+      <li><a href="#">Personal Website</a></li>
+    </ul>
+  </div>
+  
 </body>
 </html>

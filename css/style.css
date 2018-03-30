@@ -1,0 +1,267 @@
+/**
+ * File Name: style.css
+ * Description: Main style sheet
+ *
+ * @author Analia Mok
+ */
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #333;
+ font-family: 'Lato', sans-serif;
+ text-decoration: none;
+}
+
+html, body{
+ width: 100%;
+ background-color: #48A9A6;
+ text-align: center;
+}
+
+h1, h2{
+ font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 3rem; /* 48px */
+  font-weight: 700;
+  color: #FFF;
+}
+h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.wrapper{
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper #image{
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#profile-link{
+  text-align: center;
+  text-decoration: underline;
+}
+
+div#content{
+  display: block;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+#content h1{
+  text-align: center;
+}
+
+/*
+  Filter Bar Styling
+  ---------------------------------------------------------------------------
+*/
+
+#content #filter-bar{
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  margin: 4rem 0;
+}
+
+#filter-bar .right-items{
+  font-size: 4rem;
+}
+.right-items i{
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* Custom Select */
+.render::before{
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+#custom-select{
+  position: relative;
+  background-color: #FFF;
+}
+
+#custom-select select{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  border: 0;
+}
+
+#custom-select option{
+  padding: 1rem;
+  background-color: #FFF;
+  border: 0;
+  outline: none;
+}
+
+#custom-select option:hover{
+  background-color: #357B79;
+}
+
+/*
+  Grid Styling
+  ---------------------------------------------------------------------------
+*/
+
+div.grid{
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  clear: both;
+}
+
+/*
+  Card Styling
+  ---------------------------------------------------------------------------
+*/
+
+.card{
+  display: block;
+  width: auto;
+  height: auto;
+  -webkit-flex: 1 1 100%;
+  -moz-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(203, 238, 243, 0.8);
+  overflow: hidden;
+  text-align: left;
+}
+
+.card .card-title{
+  display: inline-block;
+  word-break: break-all;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
+
+.card .card-content{
+  width: auto;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.card span::before{
+  content: "\25A0 ";
+}
+
+/*
+  Footer Styling
+  ---------------------------------------------------------------------------
+*/
+
+footer{
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#social-links{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+}
+#social-links ul{
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+#social-links ul li{
+  margin-top: 0.5rem;
+  background-color: #FFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+#social-links ul li a{
+  display: block;
+  padding: 0.75rem 1rem;
+  font-family: 'Raleway', sans-serif;
+  color: #48A9A6;
+}
+
+/* Tablet Styling */
+@media screen and (min-width: 768px){
+  .wrapper{
+    width: 75%;
+  }
+
+  .grid .card{
+    -webkit-flex: 1 1 40%;
+    -moz-flex: 1 1 40%;
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%;
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+  /* .grid .card:nth-child(odd){
+    margin-right: 1rem;
+  } */
+
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 1024px){
+  .wrapper{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  div.grid{
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .grid .card{
+    -webkit-flex: 1 1 25%;
+    -moz-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    margin: 0 0.5rem 1rem;
+  }
+  
+  /* .grid .card:nth-child(even){
+    margin-left: 0;
+  } */
+
+  /* .grid .card:nth-child(3n){
+    margin-right: 0;
+  } */
+}
